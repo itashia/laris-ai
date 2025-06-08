@@ -9,7 +9,7 @@ class LarisAIGenServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../../config/laris-ai.php', 'laris-ai'
+            __DIR__.'/../config/laris-ai.php', 'laris-ai'
         );
         
         $this->app->singleton('laris-ai', function ($app) {
@@ -30,7 +30,7 @@ class LarisAIGenServiceProvider extends ServiceProvider
             ]);
             
             $this->publishes([
-                __DIR__.'/../../config/laris-ai-gen.php' => config_path('laris-ai-gen.php'),
+                __DIR__.'/../config/laris-ai-gen.php' => config_path('laris-ai-gen.php'),
             ], 'laris-ai-gen-config');
         }
     }
