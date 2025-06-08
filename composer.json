@@ -1,0 +1,62 @@
+{
+    "name": "laris/laris-ai",
+    "description": "A powerful Laravel package for AI-powered code generation using OpenRouter API",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "openrouter",
+        "ai",
+        "code generation",
+        "artisan",
+        "productivity"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arshia Mohammadei",
+            "email": "a.mmdi2007m@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^12.0",
+        "guzzlehttp/guzzle": "^8.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^7.0|^8.0",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laris\\LarisAi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laris\\LarisAi\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laris\\LarisAi\\OpenRouterAIServiceProvider"
+            ],
+            "aliases": {
+                "LarisAI": "Laris\\LarisAi\\Facades\\LarisAIFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
