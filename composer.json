@@ -1,0 +1,28 @@
+{
+    "name": "laris/laris-ai-gen",
+    "description": "AI-powered code generator for Laravel",
+    "type": "library",
+    "require": {
+        "illuminate/console": "^12.17",
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laris\\AiGenerated\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ArshiaMohammadei",
+            "email": "a.mmdi2007m@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laris\\AiGeneration\\LarisAIServiceProvider"
+            ]
+        }
+    }
+}
