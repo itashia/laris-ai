@@ -9,8 +9,8 @@ class OpenRouterClient
 
     public function __construct()
     {
-        $this->apiKey = env('OPENROUTER_API_KEY');
-        $this->model = 'openai/gpt-4o';
+        $this->apiKey = env('LARIS_OPENROUTER_API_KEY');
+        $this->model = env('LARIS_MODEL');
     }
 
     public function generateCode(string $prompt): string
