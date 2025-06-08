@@ -28,7 +28,7 @@ class AIGenerateControllerCommand extends Command
         {--queue : Add queueable jobs}
         {--auth : Add authentication middleware}
         {--swagger : Generate OpenAPI/Swagger annotations}
-        {--version=v1 : API version prefix}
+        {--version_api=v1 : API version prefix}
         {--service : Generate corresponding service class}
         {--dto : Generate Data Transfer Objects}
         {--policy : Generate authorization policy}';
