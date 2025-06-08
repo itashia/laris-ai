@@ -1,5 +1,5 @@
 {
-    "name": "laris/laris-ai-gen",
+    "name": "laris/laris-ai",
     "description": "AI-powered code generator for Laravel",
     "type": "library",
     "require": {
