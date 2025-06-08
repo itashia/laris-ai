@@ -70,18 +70,15 @@ class AIGenerateControllerCommand extends Command
 
     private function displayAsciiArt(): void
     {
-        $this->line("<fg=magenta>
-
-        
+        $this->line("<fg=magenta>        
   _               _____  _____  _____ 
  | |        /\   |  __ \|_   _|/ ____|
  | |       /  \  | |__) | | | | (___  
  | |      / /\ \ |  _  /  | |  \___ \ 
  | |____ / ____ \| | \ \ _| |_ ____) |
- |______/_/    \_\_|  \_\_____|_____/ 
-                                      
+ |______/_/    \_\_|  \_\_____|_____/                 
 </>");
-        $this->line("<fg=cyan>Laravel AI Code Generator - Smart Controller Wizard</>");
+        $this->line("<fg=cyan>Laravel AI Code Generator - Controller Wizard</>");
         $this->line("");
     }
 
