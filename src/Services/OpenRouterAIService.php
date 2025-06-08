@@ -14,9 +14,9 @@ class OpenRouterAIService
 
     public function __construct(string $apiKey, string $baseUrl, string $defaultModel)
     {
-        $this->apiKey = $apiKey ?? config('laris-ai-gen.api_key');
-        $this->baseUrl = $baseUrl;
-        $this->defaultModel = $defaultModel;
+        $this->apiKey = $apiKey ?? config('laris-ai-gen.openrouter.api_key');
+        $this->baseUrl = $baseUrl ?? config('laris-ai-gen.openrouter.base_url');
+        $this->defaultModel = $defaultModel ?? config('laris-ai-gen.openrouter.default_model');
         $this->client = new Client(['base_uri' => $this->baseUrl]);
     }
 
